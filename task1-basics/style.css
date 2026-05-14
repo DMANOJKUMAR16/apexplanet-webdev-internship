@@ -52,3 +52,32 @@ button {
 button:hover {
     background-color: #146c43;
 }
+
+a:hover {
+    background-color: #0b5ed7;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    a {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
