@@ -84,3 +84,30 @@ h1 {
         font-size: 28px;
     }
 }
+
+.api-container {
+    width: 90%;
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.api-container h2 {
+    color: #0d6efd;
+}
+
+#joke {
+    font-size: 18px;
+
+    margin: 20px 0;
+}

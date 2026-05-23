@@ -77,3 +77,30 @@ nextBtn.addEventListener("click", function() {
 });
 
 loadQuestion();
+
+
+const jokeBtn = document.getElementById("jokeBtn");
+
+const jokeText = document.getElementById("joke");
+
+jokeBtn.addEventListener("click", async function() {
+
+    try {
+
+        const response = await fetch(
+            "https://official-joke-api.appspot.com/random_joke"
+        );
+
+        const data = await response.json();
+
+        jokeText.textContent =
+            `${data.setup} - ${data.punchline}`;
+
+    } catch (error) {
+
+        jokeText.textContent =
+            "Failed to fetch joke. Please try again.";
+
+    }
+
+});
