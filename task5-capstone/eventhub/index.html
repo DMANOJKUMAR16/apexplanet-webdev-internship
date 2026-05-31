@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+</head>
+<body>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>EventHub</h1>
+
+            <p>
+                Discover and book amazing tech,
+                startup, and community events.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Controls -->
+
+    <section class="controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search events..."
+        >
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="tech">
+                Tech
+            </option>
+
+            <option value="startup">
+                Startup
+            </option>
+
+            <option value="community">
+                Community
+            </option>
+
+        </select>
+
+    </section>
+
+    <!-- Events -->
+
+    <section>
+
+        <h2 class="section-title">
+            Upcoming Events
+        </h2>
+
+        <div id="eventsContainer"></div>
+
+    </section>
+
+    <!-- Bookings -->
+
+    <section>
+
+        <h2 class="section-title">
+            My Bookings
+        </h2>
+
+        <div id="bookingsContainer"></div>
+
+    </section>
+
+    <!-- Toast -->
+
+    <div id="toast">
+        Event Booked Successfully
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
