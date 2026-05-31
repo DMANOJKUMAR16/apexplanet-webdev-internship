@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TechStore</h1>
+
+        <div class="cart">
+            🛒 Cart:
+            <span id="cartCount">0</span>
+        </div>
+    </header>
+
+    <section class="controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+        >
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="laptop">Laptops</option>
+            <option value="phone">Phones</option>
+            <option value="accessory">Accessories</option>
+        </select>
+
+    </section>
+
+    <section id="productsContainer"></section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
