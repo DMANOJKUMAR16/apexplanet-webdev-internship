@@ -81,6 +81,11 @@ eventsContainer.innerHTML = "";
 
 eventList.forEach(event => {
 
+const isBooked =
+bookings.some(
+booking => booking.id === event.id
+);
+
 const card =
 document.createElement("div");
 
@@ -96,10 +101,11 @@ card.innerHTML = `
 <p>${event.description}</p>
 
 <button
-class="book-btn"
+class="book-btn ${isBooked ? 'booked-btn' : ''}"
+${isBooked ? 'disabled' : ''}
 onclick="bookEvent(${event.id})"
 >
-Book Event
+${isBooked ? 'Booked ✓' : 'Book Event'}
 </button>
 `;
 
@@ -177,6 +183,7 @@ JSON.stringify(bookings)
 );
 
 displayBookings();
+displayEvents(events);
 
 showToast("Event booked successfully");
 
@@ -195,6 +202,7 @@ JSON.stringify(bookings)
 );
 
 displayBookings();
+displayEvents(events);
 
 showToast("Booking removed");
 
@@ -242,5 +250,4 @@ filterEvents
 );
 
 displayEvents(events);
-
 displayBookings();
